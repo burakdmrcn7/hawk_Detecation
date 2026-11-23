@@ -1,0 +1,1 @@
+Put the YOLO .txt files exported from makesense.ai here (normal_01.txt ...)

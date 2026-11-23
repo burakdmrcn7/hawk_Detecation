@@ -1,0 +1,32 @@
+digraph G {
+  rankdir=TB; nodesep=0.35; ranksep=0.4;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=12, fillcolor="#eef3fb", color="#4f81bd"];
+  edge [color="#555555"];
+  start [label="Start", shape=oval, fillcolor="#d9ead3", color="#6aa84f"];
+  cap [label="1. Capture ≥15 original photos of group members\n5 normal light | 5 low light | 5 challenging (backlight)"];
+  ann [label="2. Annotate every face (makesense.ai)\nGround-truth boxes (YOLO .txt) + true face count"];
+  load [label="Load image + ground truth"];
+  enh [label="3. Image enhancement (same fixed parameters for all images)", fillcolor="#fff2cc", color="#bf9000"];
+  e0 [label="Original", fillcolor="#fff2cc", color="#bf9000"];
+  e1 [label="Brightness/Contrast\ng = αf + β  (manual)", fillcolor="#fff2cc", color="#bf9000"];
+  e2 [label="Histogram Equalization\n(manual, no cv2.equalizeHist)", fillcolor="#fff2cc", color="#bf9000"];
+  e3 [label="CLAHE\n(OpenCV)", fillcolor="#fff2cc", color="#bf9000"];
+  haar [label="Haar Cascade (Viola–Jones)\nscale=1.1, minNeighbors=5", fillcolor="#f4cccc", color="#cc0000"];
+  yolo [label="YOLOv8n-face (pretrained)\nconf=0.25, NMS IoU=0.45", fillcolor="#cfe2f3", color="#3d85c6"];
+  match [label="4. One-to-one matching with ground truth\nIoU ≥ 0.50 → TP / FP / FN"];
+  met [label="5. Metrics: Precision, Recall, F1,\n|count error| per image, MAE, detector time"];
+  loop [label="All images × 4 versions\n× 2 detectors done?", shape=diamond, fillcolor="#ffffff"];
+  out [label="Tables (CSV), charts, annotated images"];
+  q [label="Answer: does a visually better image\nalways give higher detection accuracy?"];
+  end [label="Word report + live demo", shape=oval, fillcolor="#d9ead3", color="#6aa84f"];
+  start -> cap -> ann -> load -> enh;
+  enh -> e0; enh -> e1; enh -> e2; enh -> e3;
+  {rank=same; e0 -> e1 -> e2 -> e3 [style=invis]}
+  {e0 e1 e2 e3} -> haar; {e0 e1 e2 e3} -> yolo;
+  {rank=same; haar -> yolo [style=invis]}
+  haar -> match; yolo -> match;
+  match -> met -> loop;
+  loop -> load [label=" no", fontsize=10];
+  loop -> out [label=" yes", fontsize=10];
+  out -> q -> end;
+}
