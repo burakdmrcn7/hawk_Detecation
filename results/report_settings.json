@@ -1,0 +1,53 @@
+{
+  "haar": {
+    "scaleFactor": 1.1,
+    "minNeighbors": 5,
+    "minSize": [
+      30,
+      30
+    ]
+  },
+  "yolo": {
+    "conf": 0.25,
+    "nms_iou": 0.45,
+    "imgsz": 640,
+    "device": "cpu"
+  },
+  "iou_match_threshold": 0.5,
+  "brightness_contrast": {
+    "alpha": 1.5,
+    "beta": 30
+  },
+  "clahe": {
+    "clip": 2.0,
+    "tile": [
+      8,
+      8
+    ]
+  },
+  "manual_hist_eq_max_abs_diff_vs_opencv": 0,
+  "timing_definition": {
+    "detector_ms": "Yalnizca dedektor cagrisi (cikarim). Dosya okuma ve on isleme dahil degildir. Haar icin gri ton donusumu bu sureye dahildir.",
+    "enhance_ms": "Yalnizca on isleme.",
+    "end_to_end_ms": "On isleme + dedektor cagrisi. Diskten imread bu toplama dahil edilmedi; model yuklemesi ve isinma (__init__) da dahil degildir."
+  },
+  "ground_truth_available": true,
+  "n_files": 15,
+  "n_unique": 15,
+  "python": "3.12.3",
+  "opencv": "4.12.0",
+  "numpy": "2.2.6",
+  "pandas": "3.0.2",
+  "matplotlib": "3.10.9",
+  "torch": "2.15.0+cpu",
+  "ultralytics": "8.4.216",
+  "machine": "Windows 11 AMD64 | Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+  "device": "cpu",
+  "seed": 0,
+  "comparison_images": [
+    "WhatsApp Image 2026-11-23 at 19.16.51.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.16.52 (1).jpeg",
+    "WhatsApp Image 2026-11-23 at 19.18.07.jpeg",
+    "IMG_2805.JPEG"
+  ]
+}

@@ -1,0 +1,17 @@
+subset,detector,enhancement,images,mean_pred_count,std_pred_count,sum_pred_count,mean_brightness,mean_rms_contrast,mean_entropy,mean_enhance_ms,mean_detector_ms,mean_end_to_end_ms,TP,FP,FN,precision,recall,F1,MAE
+tum_dosyalar,haar,original,15,3.4,1.625,51,103.41,51.59,7.315,1.39,547.87,549.26,0,51,0,0.0,0.0,0.0,3.4
+tum_dosyalar,yolo,original,15,3.2,1.376,48,103.41,51.59,7.315,1.39,56.21,57.6,0,48,0,0.0,0.0,0.0,3.2
+tum_dosyalar,haar,brightness_contrast,15,3.467,1.5,52,167.34,57.07,6.274,18.5,510.74,529.24,0,52,0,0.0,0.0,0.0,3.467
+tum_dosyalar,yolo,brightness_contrast,15,3.267,1.436,49,167.34,57.07,6.274,18.5,50.34,68.84,0,49,0,0.0,0.0,0.0,3.267
+tum_dosyalar,haar,hist_eq,15,3.733,2.594,56,127.44,73.45,7.13,64.89,603.66,668.55,0,56,0,0.0,0.0,0.0,3.733
+tum_dosyalar,yolo,hist_eq,15,3.267,1.436,49,127.44,73.45,7.13,64.89,58.16,123.05,0,49,0,0.0,0.0,0.0,3.267
+tum_dosyalar,haar,clahe,15,4.133,1.31,62,113.9,56.3,7.629,21.72,650.06,671.78,0,62,0,0.0,0.0,0.0,4.133
+tum_dosyalar,yolo,clahe,15,3.267,1.436,49,113.9,56.3,7.629,21.72,52.85,74.57,0,49,0,0.0,0.0,0.0,3.267
+ozgun_temsilciler,haar,original,15,3.4,1.625,51,103.41,51.59,7.315,1.39,547.87,549.26,0,51,0,0.0,0.0,0.0,3.4
+ozgun_temsilciler,yolo,original,15,3.2,1.376,48,103.41,51.59,7.315,1.39,56.21,57.6,0,48,0,0.0,0.0,0.0,3.2
+ozgun_temsilciler,haar,brightness_contrast,15,3.467,1.5,52,167.34,57.07,6.274,18.5,510.74,529.24,0,52,0,0.0,0.0,0.0,3.467
+ozgun_temsilciler,yolo,brightness_contrast,15,3.267,1.436,49,167.34,57.07,6.274,18.5,50.34,68.84,0,49,0,0.0,0.0,0.0,3.267
+ozgun_temsilciler,haar,hist_eq,15,3.733,2.594,56,127.44,73.45,7.13,64.89,603.66,668.55,0,56,0,0.0,0.0,0.0,3.733
+ozgun_temsilciler,yolo,hist_eq,15,3.267,1.436,49,127.44,73.45,7.13,64.89,58.16,123.05,0,49,0,0.0,0.0,0.0,3.267
+ozgun_temsilciler,haar,clahe,15,4.133,1.31,62,113.9,56.3,7.629,21.72,650.06,671.78,0,62,0,0.0,0.0,0.0,4.133
+ozgun_temsilciler,yolo,clahe,15,3.267,1.436,49,113.9,56.3,7.629,21.72,52.85,74.57,0,49,0,0.0,0.0,0.0,3.267

@@ -1,0 +1,48 @@
+{
+  "n_files": 15,
+  "n_unique_sha256": 15,
+  "n_label_files": 15,
+  "by_filename_prefix_files": {
+    "img": 1,
+    "normal": 2,
+    "whatsapp image 2026-11-23 at 18.16.57": 1,
+    "whatsapp image 2026-11-23 at 18.44.20": 1,
+    "whatsapp image 2026-11-23 at 19.00.12": 1,
+    "whatsapp image 2026-11-23 at 19.00.19": 1,
+    "whatsapp image 2026-11-23 at 19.16.51": 1,
+    "whatsapp image 2026-11-23 at 19.16.52 (1)": 1,
+    "whatsapp image 2026-11-23 at 19.16.52": 1,
+    "whatsapp image 2026-11-23 at 19.16.53": 1,
+    "whatsapp image 2026-11-23 at 19.18.07": 1,
+    "whatsapp image 2026-11-23 at 19.18.08": 1,
+    "whatsapp image 2026-11-23 at 19.18.09": 1,
+    "whatsapp image 2026-11-23 at 19.18.43": 1
+  },
+  "by_bucket_files": {
+    "normal_isik": 2,
+    "dusuk_isik": 0,
+    "ters_isik_kucuk_yuz_ortulme": 0
+  },
+  "unique_representatives": [
+    "IMG_2805.JPEG",
+    "WhatsApp Image 2026-11-23 at 18.16.57.jpeg",
+    "WhatsApp Image 2026-11-23 at 18.44.20.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.00.12.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.00.19.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.16.51.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.16.52 (1).jpeg",
+    "WhatsApp Image 2026-11-23 at 19.16.52.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.16.53.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.18.07.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.18.08.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.18.09.jpeg",
+    "WhatsApp Image 2026-11-23 at 19.18.43.jpeg",
+    "normal_25.jpg",
+    "normal_33.jpg"
+  ],
+  "duplicate_groups": [],
+  "meets_15_unique": true,
+  "meets_5_per_bucket": false,
+  "label_dir": "C:\\Users\\burak\\sana-ozel\\hawk_Detecation\\dataset\\labels",
+  "image_dir": "C:\\Users\\burak\\sana-ozel\\hawk_Detecation\\dataset\\images"
+}

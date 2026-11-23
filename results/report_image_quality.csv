@@ -1,0 +1,5 @@
+,mean_brightness,rms_contrast,entropy
+Ham goruntu,103.407,51.587,7.315
+Parlaklik/kontrast,167.34,57.073,6.274
+Histogram esitleme,127.44,73.447,7.13
+CLAHE,113.9,56.3,7.629
